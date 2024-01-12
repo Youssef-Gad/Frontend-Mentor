@@ -1,0 +1,144 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsla(216, 12%, 54%, 0.2);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @extend %flex-prop;
+  background-color: $Very-Dark-Blue;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  flex-direction: column;
+  user-select: none;
+}
+%flex-prop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: $Dark-Blue;
+  width: 30%;
+  @extend %flex-prop;
+  border-radius: 30px;
+  .title {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .text {
+    color: $Light-Grey;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .active-state {
+    padding: 2rem;
+    .star-icon {
+      width: 2rem;
+      height: 2rem;
+      padding: 1.5rem;
+      background-color: $Medium-Grey;
+      @extend %flex-prop;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+    .title,
+    .text {
+      margin-bottom: 1rem;
+    }
+    .rate {
+      display: flex;
+      color: $Light-Grey;
+      justify-content: space-around;
+      .rate-num {
+        width: 2rem;
+        height: 2rem;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background-color: $Medium-Grey;
+        @extend %flex-prop;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        transition: all 0.2s;
+      }
+      .rate-num:hover {
+        color: $white;
+        background-color: $Light-Grey;
+      }
+      .active {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+    .btn {
+      font-size: 1rem;
+      font-weight: 700;
+      height: 3rem;
+      width: 315px;
+      border: none;
+      background-color: $orange;
+      color: $white;
+      border-radius: 2rem;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      color: $orange;
+      background-color: $white;
+    }
+  }
+  .thank-you-state {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    .thank-you-img {
+      margin-bottom: 2rem;
+    }
+    .rate-selected {
+      margin: 0 3.5rem 0 3.5rem;
+      padding: 0.5rem;
+      color: $orange;
+      background-color: $Medium-Grey;
+      border-radius: 2rem;
+    }
+    .title {
+      margin: 1.5rem 0 1rem 0;
+    }
+  }
+}
+footer {
+  margin-top: 3rem;
+  .attribution {
+    color: $white;
+    font-size: 1rem;
+    text-align: center;
+    a {
+      color: $orange;
+    }
+  }
+}
+@media (max-width: 767px) {
+  main {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    width: 50%;
+  }
+}

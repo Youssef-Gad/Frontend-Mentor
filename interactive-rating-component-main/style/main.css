@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+main .active-state .rate .rate-num, main .active-state .star-icon, main, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(213, 19%, 18%);
+  width: 30%;
+  border-radius: 30px;
+}
+main .title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+main .text {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  line-height: 1.5;
+}
+main .active-state {
+  padding: 2rem;
+}
+main .active-state .star-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 1.5rem;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+main .active-state .title,
+main .active-state .text {
+  margin-bottom: 1rem;
+}
+main .active-state .rate {
+  display: flex;
+  color: hsl(217, 12%, 63%);
+  justify-content: space-around;
+}
+main .active-state .rate .rate-num {
+  width: 2rem;
+  height: 2rem;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.2s;
+}
+main .active-state .rate .rate-num:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+main .active-state .rate .active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+main .active-state .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 315px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+main .active-state .btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+main .thank-you-state {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+main .thank-you-state .thank-you-img {
+  margin-bottom: 2rem;
+}
+main .thank-you-state .rate-selected {
+  margin: 0 3.5rem 0 3.5rem;
+  padding: 0.5rem;
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border-radius: 2rem;
+}
+main .thank-you-state .title {
+  margin: 1.5rem 0 1rem 0;
+}
+
+footer {
+  margin-top: 3rem;
+}
+footer .attribution {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    width: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */
