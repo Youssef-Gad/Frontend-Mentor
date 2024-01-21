@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+main .right-side {
+  padding: 2.4rem;
+  width: 55%;
+}
+main .right-side .header {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+main .right-side .header span {
+  color: hsl(277, 64%, 61%);
+}
+main .right-side .text {
+  font-size: 1.1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+main .right-side .states {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .right-side .states .state .num {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 100%);
+}
+main .right-side .states .state .name {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+main .left-side .image {
+  display: block;
+  width: 32rem;
+  height: 25rem;
+  background-image: url("../images/image-header-mobile.jpg");
+  border-radius: 0 10px 10px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .left-side .image .overlay {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: hsl(277, 64%, 61%);
+  mix-blend-mode: multiply;
+}
+
+footer {
+  margin-top: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+footer .attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(277, 64%, 61%);
+}
+
+@media (max-width: 767px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  main .right-side {
+    width: 80%;
+    text-align: center;
+  }
+  main .right-side .states {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .left-side .image {
+    display: block;
+    width: 30rem;
+    height: 25rem;
+    background-image: url("../images/image-header-desktop.jpg");
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main .left-side .image .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  main .right-side {
+    width: 90%;
+    text-align: center;
+  }
+  main .right-side .states {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .left-side .image {
+    display: block;
+    width: 55rem;
+    height: 25rem;
+    background-image: url("../images/image-header-desktop.jpg");
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main .left-side .image .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  main .right-side {
+    width: 90%;
+    text-align: center;
+  }
+  main .right-side .states {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .left-side .image {
+    display: block;
+    width: 48rem;
+    height: 25rem;
+    background-image: url("../images/image-header-desktop.jpg");
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main .left-side .image .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+  }
+}/*# sourceMappingURL=style.css.map */
