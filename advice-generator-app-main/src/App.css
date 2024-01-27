@@ -1,0 +1,85 @@
+:root {
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5rem;
+}
+.advice-box {
+  width: 32rem;
+  position: relative;
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.advice-box .advice-num p {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  color: var(--Neon-Green);
+  letter-spacing: 0.2rem;
+}
+.quote p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  color: var(--Light-Cyan);
+}
+.line-icon {
+  margin-bottom: 1rem;
+}
+.dice-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 1.8rem;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  left: calc((222px + 32px) - 1.8rem);
+  cursor: pointer;
+  border: none;
+}
+.dice-icon img {
+  width: 20px;
+  height: 20px;
+}
+.dice-icon:hover {
+  box-shadow: 0 0 30px var(--Neon-Green);
+}
+.attribution {
+  color: var(--Light-Cyan);
+  text-align: center;
+}
+.attribution a {
+  color: var(--Neon-Green);
+}
+@media (max-width: 767px) {
+  .advice-box {
+    width: 22rem;
+  }
+  .line-icon img {
+    width: 100%;
+  }
+  .dice-icon {
+    left: calc((145px + 32px) - 1.8rem);
+  }
+}
