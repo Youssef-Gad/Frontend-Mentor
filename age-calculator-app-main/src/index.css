@@ -1,0 +1,132 @@
+:root {
+  --color-Purple: hsl(259, 100%, 65%);
+  --color-Light-red: hsl(0, 100%, 67%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-Off-white: hsl(0, 0%, 94%);
+  --color-Light-grey: hsl(0, 0%, 86%);
+  --color-Smokey-grey: hsl(0, 1%, 44%);
+  --color-Off-black: hsl(0, 0%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Dark-Blue);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-Off-white);
+}
+.age-calcultor {
+  margin: 20rem 0 3rem 0;
+  width: 50rem;
+  background-color: var(--color-White);
+  padding: 3rem;
+  border-radius: 1.5rem 1.5rem 165px 1.5rem;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.inputs label {
+  font-size: 0.8rem;
+  color: var(--color-Smokey-grey);
+  letter-spacing: 0.2rem;
+}
+.inputs input {
+  width: 9rem;
+  height: 3.8rem;
+  border: 1px solid var(--color-Light-grey);
+  border-radius: 8px;
+  font-size: 1.8rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+.inputs input:focus {
+  outline: none;
+  border-color: var(--color-Purple);
+}
+.inputs input::placeholder {
+  opacity: 0.3;
+}
+.submit-container {
+  border: 1px solid var(--color-Light-grey);
+  position: relative;
+}
+.btn {
+  border: none;
+  background-color: var(--color-Purple);
+  padding: 1.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: -45px;
+}
+.btn:hover {
+  background-color: var(--color-Off-black);
+}
+.output {
+  margin-top: 3rem;
+}
+.output p {
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  height: 110px;
+}
+.output p span {
+  color: var(--color-Purple);
+}
+.error-msg {
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--color-Light-red);
+  margin-bottom: 2rem;
+}
+.inputs input.error {
+  border: 1px solid var(--color-Light-red);
+}
+.inputs label.error {
+  color: var(--color-Light-red);
+}
+.attribution {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.attribution a {
+  color: var(--color-Purple);
+}
+@media (max-width: 767px) {
+  .age-calcultor {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 22rem;
+    padding: 2rem;
+  }
+  .inputs label {
+    font-size: 0.7rem;
+  }
+  .inputs input {
+    width: 5rem;
+    font-size: 1.1rem;
+  }
+  .submit-container {
+    margin-top: 3.4rem;
+  }
+  .btn {
+    padding: 0.7rem;
+    right: 100px;
+    top: -30px;
+  }
+  .output p {
+    font-size: 3rem;
+    height: 60px;
+  }
+}
