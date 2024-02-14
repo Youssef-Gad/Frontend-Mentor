@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/design/desktop-design.jpg)
+![](./public/design/desktop-design-completed.jpg)
 
 ### Links
 
 ### Links
 
-- Live Site URL:
+- Live Site URL: https://tip-calculator-app-main-gad.netlify.app/
 
 ## My process
 
