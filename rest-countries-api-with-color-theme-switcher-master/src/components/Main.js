@@ -5,14 +5,14 @@ import Country from "./Country";
 
 function Main({ data, setRegion, countrySearch, setCountrySearch, search }) {
   const [showCountry, setShowCountry] = useState(false);
-  const [countryId, setCountryId] = useState(null);
+  const [countryName, setCountryName] = useState(null);
 
   return (
     <main className="mt-12 pb-10 px-12">
       {showCountry ? (
         <Country
           data={data}
-          countryId={countryId}
+          countryName={countryName}
           onShowCountry={setShowCountry}
         />
       ) : (
@@ -26,7 +26,7 @@ function Main({ data, setRegion, countrySearch, setCountrySearch, search }) {
           <CountriesContainer
             data={data}
             onShowCountry={setShowCountry}
-            setCountryId={setCountryId}
+            setCountryName={setCountryName}
           />
         </>
       )}

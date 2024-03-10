@@ -1,9 +1,9 @@
-function CountryItem({ country, onShowCountry, setCountryId }) {
-  const { id, name, population, capital, flag, region } = country;
+function CountryItem({ country, onShowCountry, setCountryName }) {
+  const { name, population, capital, flag, region } = country;
 
   function handleClick() {
     onShowCountry((s) => !s);
-    setCountryId(id);
+    setCountryName(name);
   }
 
   return (

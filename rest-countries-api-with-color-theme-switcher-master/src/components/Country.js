@@ -2,7 +2,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
-function Country({ data, countryId, onShowCountry }) {
+function Country({ data, countryName, onShowCountry }) {
   const [country, setCountry] = useState({});
   const {
     flag,
@@ -21,10 +21,10 @@ function Country({ data, countryId, onShowCountry }) {
   useEffect(
     function () {
       data.map((country) =>
-        country.id === countryId ? setCountry(country) : null
+        country.name === countryName ? setCountry(country) : null
       );
     },
-    [countryId, data]
+    [countryName, data]
   );
 
   return (
