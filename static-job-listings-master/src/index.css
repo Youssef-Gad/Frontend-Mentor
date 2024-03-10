@@ -1,0 +1,166 @@
+:root {
+  --color-Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  --color-Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --color-Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --color-Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --color-Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--color-Light-Grayish-Cyan-Background);
+}
+.container:before {
+  content: "";
+  background-image: url("../public/images/bg-header-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--color-Desaturated-Dark-Cyan);
+  display: block;
+  height: 150px;
+}
+.container {
+  position: relative;
+}
+.job-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+.job-list .job-item {
+  background-color: #fff;
+  box-shadow: 0 5px 16px rgba(91, 164, 164, 0.5);
+  padding: 2rem;
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-list .job-item.featured {
+  box-shadow: 0 5px 16px rgba(91, 164, 164, 0.5), inset 5px 0 0 #6ca09c;
+}
+.job-list .job-item .info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.job-list .job-item .info-content .content-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.job-list .job-item .info-content .content-header span {
+  font-weight: 700;
+}
+.job-list .job-item .info-content .content-header span:first-child {
+  color: var(--color-Desaturated-Dark-Cyan);
+}
+.job-list .job-item .info-content .content-header span:nth-child(2),
+.job-list .job-item .info-content .content-header span:nth-child(3) {
+  background-color: var(--color-Desaturated-Dark-Cyan);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.job-list .job-item .info-content .content-header span:nth-child(3) {
+  background-color: #000;
+}
+.job-list .job-item .info-content .content-body {
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.job-list .job-item .info-content .content-body:hover {
+  color: var(--color-Desaturated-Dark-Cyan);
+}
+.job-list .job-item .info-content .content-footer {
+  color: var(--color-Dark-Grayish-Cyan);
+  font-weight: 700;
+}
+.job-list .job-item .tag-list {
+  list-style: none;
+  font-weight: 700;
+  display: flex;
+  gap: 1rem;
+}
+.job-list .job-item .tag-list li {
+  background-color: var(--color-Light-Grayish-Cyan-Filter-Tablets);
+  color: var(--color-Desaturated-Dark-Cyan);
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.job-list .job-item .tag-list li:hover {
+  color: #fff;
+  background-color: var(--color-Desaturated-Dark-Cyan);
+}
+.search {
+  box-shadow: 0 5px 16px rgba(91, 164, 164, 0.5);
+  background-color: #fff;
+  padding: 1.5rem;
+  height: 4rem;
+  width: 60rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 35px;
+}
+.search ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.search ul li {
+  font-weight: 700;
+  background-color: var(--color-Light-Grayish-Cyan-Filter-Tablets);
+  color: var(--color-Desaturated-Dark-Cyan);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search ul li span:nth-child(1) {
+  padding: 0.6rem 1rem;
+}
+.search ul li span:nth-child(2) {
+  background-color: var(--color-Desaturated-Dark-Cyan);
+  border-radius: 0 5px 5px 0;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+.search ul li span:nth-child(2):hover {
+  background-color: #000;
+}
+.search .clear {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-Dark-Grayish-Cyan);
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.search .clear:hover {
+  color: var(--color-Desaturated-Dark-Cyan);
+  border-bottom: 2px solid var(--color-Desaturated-Dark-Cyan);
+}
+.attribution {
+  text-align: center;
+  margin-top: 5rem;
+}
+.attribution a {
+  color: var(--color-Desaturated-Dark-Cyan);
+}
