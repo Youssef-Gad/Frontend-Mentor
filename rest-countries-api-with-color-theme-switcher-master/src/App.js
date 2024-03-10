@@ -11,7 +11,9 @@ function App() {
   useEffect(
     function () {
       async function fetchData() {
-        const res = await fetch("http://localhost:8000/countires");
+        const res = await fetch(
+          "https://country-api-emk6.onrender.com/countires"
+        );
         const data = await res.json();
         setData(data);
       }
